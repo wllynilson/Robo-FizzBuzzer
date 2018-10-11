@@ -1,26 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    for(int i = 1; i <= 15; i++)
-    {
-        if( !(i%15))
-        {
-            cout << "fizzbuzz" << endl;
+int main(){
+    for(int i=1; i<=30; i++){
+        if(i%3==0 && i%5==0){
+            cout << "FizzBuzz" << endl;
         }
-        else if( !(i%5))
-        {
-            cout << "buzz" << endl;
+        else if(i%5==0){
+            cout << "Buzz" << endl;
         }
-        else if( !(i%3))
-        {
-            cout << "fizz" << endl;
+        else if(i%3==0){
+            cout << "Fizz" << endl;
         }
-        else
-        {
-            cout << i << endl;
-        }        
+        else{
+            cout<<i<<endl;
+        }
     }
     return 0;
 }
